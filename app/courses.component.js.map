@@ -1,1 +1,1 @@
-{"version":3,"file":"courses.component.js","sourceRoot":"","sources":["courses.component.ts"],"names":[],"mappings":";;;;;;;YAAA;gBAAA;gBAEC,CAAC,AAF6B;gBAE9B,uBAAC;YAAD,CAAC,AAFF,IAA+B;YAA/B,+CAA+B,CAAA,CAAE;;aAEhC"}
+{"version":3,"file":"courses.component.js","sourceRoot":"","sources":["courses.component.ts"],"names":[],"mappings":"AAAA,gEAAgE;;;;;;;;;;;;;;;;;;;;;YAIhE,0DAA0D;YAC1D,wCAAwC;YAWxC;gBAAA;gBAEA,CAAC;gBAZD;oBAAC,gBAAS,CAAC;wBACV,QAAQ,EAAC,SAAS;wBAClB,+HAA+H;wBAC/H,QAAQ,EAAE,EAAE;qBAGZ,CAAC;;oCAAA;gBAMF,uBAAC;YAAD,CAAC,AAFD,IAEC;YAFD,+CAEC,CAAA"}
