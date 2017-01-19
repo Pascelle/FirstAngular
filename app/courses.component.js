@@ -28,7 +28,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'courses',
                         //when angular sees an element that matches this css selector, it will create an instance of our component in the host element 
-                        template: ''
+                        template: '<h2>Courses</h2>'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], CoursesComponent);

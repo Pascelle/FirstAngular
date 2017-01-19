@@ -7,8 +7,8 @@ import {Component} from 'angular2/core'
 @Component({
 	selector:'courses'
 	//when angular sees an element that matches this css selector, it will create an instance of our component in the host element 
-	template: ''
-	
+	template: '<h2>Courses</h2>'
+	//the template is whatever is inserted into the DOM whenever the view is rendered
 	
 })
 
