@@ -17,15 +17,19 @@
 
     <!-- 2. Configure SystemJS -->
     <script>
+    //this is the systemJS library. It is for module loading.  All of the code that we write gets included automatically so we don't have to go through and include each of these files and all of the modules that we need one by one.  SystemJS takes care of all of that behind the scenes.
       System.config({
-        packages: {        
+        packages: {  
+        //packages tells systemJS what to do when it sees a new file
           app: {
             format: 'register',
             defaultExtension: 'js'
+
           }
         }
       });
       System.import('app/boot')
+      //this tells system.js that we want to load boot.js as our main entry point.
             .then(null, console.error.bind(console));
     </script>
 
