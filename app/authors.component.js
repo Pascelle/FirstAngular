@@ -25,6 +25,7 @@ System.register(['angular2/core', './author.service'], function(exports_1, conte
             //then we import authorservice
             AuthorsComponent = (function () {
                 function AuthorsComponent(authorService) {
+                    //two properties here: authors, which uses an array of strings and title
                     this.title = "The title of authors page";
                     this.authors = authorService.getAuthors();
                 }
@@ -32,6 +33,7 @@ System.register(['angular2/core', './author.service'], function(exports_1, conte
                     core_1.Component({
                         // we apply our component decorator on our AuthorsComponent class (export class AuthorsComponent)
                         selector: 'authors',
+                        //anywhere in the html where we have authors element, this component is going to be rendered
                         template: "\n\t<h2>Authors</h2>\n\t{{title}}\n\t<ul>\n\t\t<li *ngFor=\"#author of authors\">\n\t\t{{author}}\n\t\t</li>\n\t</ul>\n\t",
                         providers: [author_service_1.AuthorService]
                     }), 

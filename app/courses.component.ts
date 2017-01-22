@@ -3,6 +3,7 @@
 
 import {Component} from 'angular2/core';
 import {CourseService} from './course.service';
+import {AutoGrowDirective} from './auto-grow.directive'
 
 //decorators are functions so we need to call them using @.  When we call them this is giving the skeleton some meat.
 //There is an object within the function
@@ -14,6 +15,7 @@ import {CourseService} from './course.service';
 	template: `
 	<h2>Courses</h2>
 	{{title}}
+	<input type="text" autoGrow />
 	<ul>
 		<li *ngFor="#course of courses">
 		{{course}}
@@ -21,6 +23,7 @@ import {CourseService} from './course.service';
 
 	</ul>
 	`,
+	//angular doesnt know what autoGrow is so we need to teach it to apply the autoGrow directive whenever it sees the selector.  To do that we use the directive field
 	//#course of courses: "courses" is the object you're iterating, "of" is just a keyword, and "#course" is a way to declare a local variable in our template (in this case it is the property in our component) and for every iteration it will hold one course at a time.  Similar to a for each loop. We put the {{course}} in order to display the variable.
 	//*ngFor is an example of a directive-- it extends the HTML and adds extra behavior.  In this case it will repeat the <li> based on the expression assigned to it.
 	//whenever you use ` this allows you to break up the template into multiple lines
@@ -30,6 +33,7 @@ import {CourseService} from './course.service';
 	//There is also two-way binding.  For example when you type something into an input field that is bound to a property, as you modify the value of the input field the property will be updated automatically. (TWO WAY: VIEW IS MODIFIED, CORRESPONDING PROPERTY IS AS WELL)
 	providers: [CourseService]
 	//in this array we specify the dependencies for this component
+	directives: [AutoGrowDirective]
 })
 
 //this creates a class

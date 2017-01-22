@@ -36,7 +36,7 @@ System.register(['angular2/core', './courses.component', './authors.component'],
                         //the selector is just a tag, like a <title> tag or <link> tag.  We can make a custom tag.
                         //the selector property indicates which DOM element the component is going to use.  This way if we have any my-app tags within a template, it will be compiled using this component class.
                         //whenever Angular sees my-app in the HTML, it is going to put whatever is in the template in the my-app element (here it is the h1 element with the courses element inside of it)
-                        template: '<h1>My First Angular 2 App</h1><courses></courses><authors></authors>',
+                        template: '<h1>My First Angular 2 App</h1> <courses></courses> <authors></authors>',
                         //a template is the actual text that displays inside the component. It is whatever is inserted into the DOM whenever the view is rendered
                         //<courses> is a new element but we need to reference the component it belongs to by specifying in directives
                         //<courses> is our host element for our courses component

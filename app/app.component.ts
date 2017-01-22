@@ -16,11 +16,12 @@ import {AuthorsComponent} from './authors.component';
     //the selector is just a tag, like a <title> tag or <link> tag.  We can make a custom tag.
     //the selector property indicates which DOM element the component is going to use.  This way if we have any my-app tags within a template, it will be compiled using this component class.
     //whenever Angular sees my-app in the HTML, it is going to put whatever is in the template in the my-app element (here it is the h1 element with the courses element inside of it)
-    template: '<h1>My First Angular 2 App</h1><courses></courses><authors></authors>',
+    template: '<h1>My First Angular 2 App</h1> <courses></courses> <authors></authors>',
     //a template is the actual text that displays inside the component. It is whatever is inserted into the DOM whenever the view is rendered
     //<courses> is a new element but we need to reference the component it belongs to by specifying in directives
     //<courses> is our host element for our courses component
     directives: [CoursesComponent, AuthorsComponent]
+    //directives tell angular what components the listed templates are using.
     //we are referencing the component that the <courses> element comes from here
     //A directive is a class that allows us to extend or control the DOM.  We can define custom elements or attributes that are not part of standard HTML.
     //every component is technically a directive.  The difference is that a component has a template (elements etc inside of it) and a directive doesn't.
